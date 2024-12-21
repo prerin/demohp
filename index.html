@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="株式会社GIG - GOOD IS GOOD"/>
+  <meta property="og:description" content="テクノロジーとクリエイティブを融合し、より良い世界を創造するデジタルコンサルティング企業"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="images/og_image.jpg"/>
+  <title>株式会社GIG | GOOD IS GOOD</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="application.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-inner-2">
+                <div class="logo-area">
+                    <a href="/index">
+                        <img src="images/logo.png" alt="事務所名" class="site-logo">
+                    </a>
+                </div>
+                <button class="hamburger-menu" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                <nav class="global-nav">
+                    <ul class="nav-list">
+                        <li><a href="/flow">無料相談の流れ</a></li>
+                        <li><a href="/fees">弁護士費用</a></li>
+                        <li><a href="/services/receive">遺産を受け取る方</a></li>
+                        <li><a href="/services/leave">遺産を遺す方</a></li>
+                        <li><a href="/team">遺産相続専門チーム</a></li>
+                        <li><a href="/columns">弁護士コラム</a></li>
+                        <li><a href="/offices">事務所案内</a></li>
+                        <li><a href="/cases">解決実績</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contact-button"><a href="/contact">お問い合わせ</a></div>
+        </div>
+    </header>
+    <script src="/application.js"></script>
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('images/top1.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/top2.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/top3.png');"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-suffix">NEW DEGITAL WORLD</p>
+            <h1 id="hero-heading">相続問題、40年の専門実績で</h1>
+        </div>
+        </section>
+
+        <!-- 強み・バリュープロポジション紹介エリア -->
+        <section class="strengths" aria-labelledby="strengths-heading">
+        <div class="heading strength">
+            <p>course</p>
+            <h2>私たちの強み</h2>
+            <hr size="2px">
+        </div>
+        <div class="strength-list">
+            <div class="strength-item">
+            <img src="images/strength1.png" alt="" aria-hidden="true">
+            <p>40年の実績</p>
+            </div>
+            <div class="strength-item">
+            <img src="images/strength2.png" alt="" aria-hidden="true">
+            <p>ワンストップ連携</p>
+            </div>
+            <div class="strength-item">
+            <img src="images/strength3.png" alt="" aria-hidden="true">
+            <p>スピード解決</p>
+            </div>
+        </div>
+        <button class="btn">コース一覧</button>
+        </section>
+
+        <!-- 主要サービスエリア -->
+        <section class="main-services" aria-labelledby="main-services-heading">
+        <div class="heading">
+            <p>consult</p>
+            <h2>ご相談について</h2>
+            <hr size="2px">
+        </div>
+        <div class="service-panels">
+            <div class="consult-panel" style="background-image: url('images/consult_back.png');">
+            <h2>遺産を受け取る方へ</h2>
+            <div class="consult-component">
+                <img src="images/consult_main.png" alt="" width="400px">
+                <div class="consult-document">
+                <h3>相続問題、40年の専門実績をもつ弁護士によるご相談</h3>
+                <p>
+                    相談手続き、財産分与のサポート、問題解決に向けたアドバイスをご提供いたします。
+                </p>
+                <button class="btn">詳しく見る</button>
+                </div>
+            </div>
+            </div>
+            <div class="consult-panel" style="background-image: url('images/consult_back.png');">
+            <h2>遺産を遺す方へ</h2>
+            <div class="consult-component">
+                <img src="images/consult_main.png" alt="" width="400px">
+                <div class="consult-document">
+                <h3>相続問題、40年の専門実績をもつ弁護士によるご相談</h3>
+                <p>
+                    相談手続き、財産分与のサポート、問題解決に向けたアドバイスをご提供いたします。
+                </p>
+                <button class="btn">詳しく見る</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- アクセス -->
+        <section class="access" aria-labelledby="access-heading">
+        <div class="heading">
+            <p>access</p>
+            <h2>アクセス</h2>
+            <hr size="2px">
+        </div>
+        <div class="access-content">
+            <div class="access-map">
+            <div id="map"></div>
+            </div>
+            <div class="access-info">
+            <h3>株式会社GIG</h3>
+            <p>〒150-0021 東京都渋谷区渋谷1-2-3</p>
+            <p>TEL: 03-1234-5678</p>
+            <p>営業時間: 10:00 - 18:00</p>
+            <button class="btn">詳しく見る</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- コンタクト -->
+        <section class="contact">
+        <div class="contact-heading">
+            <p>contact</p>
+            <h2>ご相談・お問い合わせ</h2>
+        </div>
+        <div class="contact-info">
+            <div class="telephone">
+            <h4><i class="fas fa-phone"></i>06-6364-1133</h4>
+            <p>受付時間 9:00~18:00（土日祝日定休）</p>
+            </div>
+            <div class="contact-form">
+            <h5><i class="fas fa-envelope"></i>お問合せフォーム</h5>
+            </div>
+        </div>
+        </section>
+    </main>
+  
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="/index">
+                    <img src="images/logo.png" alt="事務所名" class="site-logo">
+                </a>
+                <p>
+                    〒530-0047 <br>
+                    大阪市北区西天満4丁目3番25号梅田プラザビル別館301号 <br>
+                    TEL:06-6364-1133/FAX:06-6364-1134
+                </p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-link">
+                    <h4 class="have_h5">取扱業務</h4>
+                    <h5>- 法人・事業者のお客様</h5>
+                    <h5>- 個人のお客様</h5>
+                </div>
+                <div class="footer-link">
+                    <h4>料金案内</h4>
+                    <h4>弁護士紹介</h4>
+                    <h4>事務所案内</h4>
+                </div>
+                <div class="footer-link">
+                    <h4>アクセス</h4>
+                    <h4>お問い合せ</h4>
+                    <h4>プライバシーポリシー</h4>
+                </div>
+            </div>
+        </div>
+        <div class="footer-btns">
+            <button class="footer-btn">遺産相続のご相談</button>
+            <button class="footer-btn">成年後見のご相談</button>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <!-- アクセストークンをサーバー側から注入する場合、EJS変数として渡すことが可能 -->
+  <script>
+    // ここでEJS変数としてアクセストークンをセットした場合
+    // const mapboxAccessToken = 'pk.eyJ1IjoicHJlcmluMTAwNCIsImEiOiJjbTR3cndteHQwZ3dsMm5xMjJhMHo1enlsIn0.wOePVRV4-cFSkl5wZN2n0Q';
+  
+    mapboxgl.accessToken = "pk.eyJ1IjoicHJlcmluMTAwNCIsImEiOiJjbTR3czkxcjIwZm5jMmtxeDNjYmw5aHp2In0.hAhVDB_yJqV-VoU-wnzfIA";
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/prerin1004/cm4wst1x4005101rj3qj8bba0',
+      center: [135.505898, 34.697356], 
+      zoom: 15
+    });
+
+    // 指定位置にマーカーを設置
+    new mapboxgl.Marker()
+      .setLngLat([135.505898, 34.697356])
+      .addTo(map);
+  </script>
+</body>
+</html>
