@@ -74,6 +74,8 @@ section {
   background-color: white;
   font-weight: 100;
   letter-spacing: 2px;
+  color: #0099FF;
+  border-color: #0099FF;
 }
 
 .btn::before{
@@ -140,9 +142,12 @@ section {
   font-weight: 500;
 }
 
-.heading hr {
+.line-strong {
+  border: none;
+  height: 2px;
   width: 90px;
-  background-color: black;
+  background-color: #000;
+  margin: 1rem auto;
 }
 
 .heading.strength {
@@ -151,6 +156,10 @@ section {
 
 .strengths {
   text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+  background-color: #fff;
 }
 
 .strength-list {
@@ -158,40 +167,42 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.strength-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%; 
+  background-color: #eee; 
+  z-index: -1; 
+}
+
 .strength-item {
   position: relative;
   text-align: center;
-  background: #fff;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   width: 300px;
-  height: 220px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .strength-item img {
   width: 300px;
-  height: 220px;
   display: block;
 }
 
-.strength-item p {
-  display: inline;
+.strength-item h3 {
   position: absolute;
-  top: 237px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
   color: black;
-  margin: 0 auto;
   font-size: 13px;
   font-weight: 200;
-  padding: 3px 30px;
+  padding: 3px 10px;
   background-color: white;
-  box-shadow: 2px 3px;
-}
-
-.strengths button {
-  color: #6666CC;
-  border-color: #6666CC;
 }
 
 .consult-panel {
@@ -204,7 +215,7 @@ section {
   margin-bottom: 100px;
 }
 
-.consult-panel h2 {
+.consult-panel h3 {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -231,21 +242,18 @@ section {
   padding: 0 40px;
 } 
 
-.consult-document h3 {
-  color: cornflowerblue;
+.consult-document h4 {
+  background: linear-gradient(to right, #005aff, #00a1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 18px;
   margin-bottom: 20px;
-} 
+}
 
 .consult-document p {
   font-size: 12px;
   margin-bottom: 20px;
 } 
-
-.consult-document button {
-  color: #0099FF;
-  border-color: #0099FF;
-}
 
 .access {
   margin: 100px 0;
@@ -325,7 +333,7 @@ i {
   width: 500px;
   height: 100px;
   /* background: linear-gradient(transparent 0%, transparent 50%, #0099FF 50%, #0099FF 100%); */
-  background-color: cyan;
+  background: linear-gradient(to right, #005aff, #00a1ff);
   text-align: center;
   align-content: center;
   margin: 10px;
@@ -335,45 +343,6 @@ i {
   font-size: 20px;
   font-weight: 300;
   color: white;
-}
-
-/* フッター */
-.site-footer {
-  background: #1D3C45;
-  color: #fff;
-  padding: 2rem 1rem;
-}
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.footer-bottom {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.875rem;
-}
-.social-links {
-  display: flex;
-  gap: 0.5rem;
-}
-.social-links img {
-  width: 24px;
-  height: 24px;
 }
 
 /* レスポンシブ対応 */

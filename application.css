@@ -64,17 +64,36 @@ body {
 }
 
 .contact-button {
-    height: 140%;
-    width: 150px;
+    display: flex;                /* Flexboxレイアウト */
+    flex-direction: column;       /* 上から下へ要素を並べる */
+    align-items: center;          /* 要素を中央寄せ（左右） */
+    justify-content: center;      /* 要素を中央寄せ（上下） */
+  
+    height: 180%;                 /* 元の高さ設定 */
+    width: 130px;                 
     background: linear-gradient(to right, #005aff, #00a1ff);
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
+    text-align: center;
+    overflow: hidden;             /* はみ出し対策（必要に応じて） */
 }
+
+.contact-button p {
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: rgba(256, 256, 256, 0.8);
+    margin: 25px 0 0;               /* 上下の余白を調整 */
+}
+
 .contact-button a {
     color: #fff;
-    font-weight: bold;
-    padding: 10px 0 0;
+    font-size: 16px;              /* pより少し大きめ */
+    text-decoration: none;
+}
+
+.contact-button i {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 2px;
 }
 
 .contact-button:hover {
