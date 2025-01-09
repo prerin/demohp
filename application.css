@@ -19,6 +19,8 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    /* 下に影をつける */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header-inner-2 {
@@ -54,26 +56,28 @@ body {
 }
 
 .global-nav .nav-list li a {
+    font-size: 18px;
+    font-weight: 550;
     text-decoration: none;
     color: #000;
     padding: 10px;
 }
 
 .global-nav .nav-list li a:hover {
-    color: #222;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .contact-button {
-    display: flex;                /* Flexboxレイアウト */
-    flex-direction: column;       /* 上から下へ要素を並べる */
-    align-items: center;          /* 要素を中央寄せ（左右） */
-    justify-content: center;      /* 要素を中央寄せ（上下） */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   
-    height: 180%;                 /* 元の高さ設定 */
+    height: 180%;
     width: 130px;                 
     background: linear-gradient(to right, #005aff, #00a1ff);
     text-align: center;
-    overflow: hidden;             /* はみ出し対策（必要に応じて） */
+    overflow: hidden;
 }
 
 .contact-button p {
@@ -81,24 +85,24 @@ body {
     font-weight: 500;
     letter-spacing: 0.5px;
     color: rgba(256, 256, 256, 0.8);
-    margin: 25px 0 0;               /* 上下の余白を調整 */
+    margin: 25px 0 0; 
 }
 
-.contact-button a {
+.contact-button span {
     color: #fff;
-    font-size: 16px;              /* pより少し大きめ */
+    font-size: 16px;
     text-decoration: none;
 }
 
 .contact-button i {
     color: #fff;
     font-size: 18px;
-    margin-top: 2px;
+    margin: 2px 0 0;
 }
-
+/* 
 .contact-button:hover {
     background: linear-gradient(to right, #004de0, #008ce0);
-}
+} */
 
 /* 固定ヘッダーがコンテンツと重ならないようにメインコンテンツに上部余白を設定 */
 main {
